@@ -5,5 +5,5 @@ services:
     image: nginx:alpine
     volumes:
       - nginx-vol:/var
-volumes:
-  nginx-vol:
+    ports:
+    - 8081:81
