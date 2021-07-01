@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  app:
+  docker-compose-nginx-git-public:
     image: nginx:alpine
     volumes:
       - nginx-vol:/var
