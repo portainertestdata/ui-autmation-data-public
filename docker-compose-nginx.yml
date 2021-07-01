@@ -3,7 +3,5 @@ version: '3'
 services:
   docker-compose-nginx-git-public:
     image: nginx:alpine
-    volumes:
-      - nginx-vol:/var
     ports:
       - 8081:81
