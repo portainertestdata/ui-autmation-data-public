@@ -1,0 +1,4 @@
+services:
+  nginx-container:
+    image: nginx:latest
+    container_name: caddy
