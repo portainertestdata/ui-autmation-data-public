@@ -1,4 +1,4 @@
 services:
   nginx-container:
-    image: nginx:latest
+    image: caddy:latest
     container_name: caddy
