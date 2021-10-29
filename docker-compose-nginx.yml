@@ -4,4 +4,4 @@ services:
   docker-compose-nginx-git-public:
     image: nginx:alpine
     ports:
-      - 8084:84
+      - 8086:86
