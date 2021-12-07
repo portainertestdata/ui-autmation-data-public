@@ -4,6 +4,7 @@ metadata:
   name: manifest-nginx-git-public
   labels:
     app: nginx
+  namespace: default
 spec:
   replicas: 3
   selector:
