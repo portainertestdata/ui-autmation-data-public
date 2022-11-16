@@ -1,0 +1,25 @@
+version: '3'
+services:
+ minio-server:
+  image: minio/minio:latest
+  ports:
+   - 5000:9000
+   - 5001:5001
+  command: server /data --console-address ":5001"
+  environment:
+   - MINIO_ROOT_USER=minioadmin
+   - MINIO_ROOT_PASSWORD=miniopassword
+  volumes:
+   - minio_data:/data
+ 
+ minio-mc:
+  image: minio/mc:latest
+  volumes:
+   - minio_data:/data
+  tty: true
+  stdin_open: true
+  network_mode: "host"
+  
+volumes:
+ minio_data:
+ 
