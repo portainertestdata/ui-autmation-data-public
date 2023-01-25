@@ -3,9 +3,9 @@ services:
  minio-server:
   image: minio/minio:latest
   ports:
-   - 5000:9000
-   - 5001:5001
-  command: server /data --console-address ":5001"
+   - 3000:9000
+   - 3001:3001
+  command: server /data --console-address ":3001"
   environment:
    - MINIO_ROOT_USER=minioadmin
    - MINIO_ROOT_PASSWORD=miniopassword
